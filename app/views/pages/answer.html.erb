@@ -1,6 +1,13 @@
 <div class="container">
   <h1>Answers</h1>
-    <%= @answer %>
+    <div class="response">
+      <h3>You asked:</h3>
+      <%= @question %>
+    </div>
+    <div class="response">
+      <h3>Coach says: </h3>
+      <%= @answer %>
+    </div>
     <div class="btn">
       <%= link_to 'Back', questions_path  %>
     </div>
